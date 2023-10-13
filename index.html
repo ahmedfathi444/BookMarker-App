@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarker</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container  py-5">
+        <h1 class="text-center">BookMarker</h1>
+        <div class="bookmarker-body mb-4 ">
+            
+            <h2 class="text-center"> <i class="fa-solid fa-bookmark"></i> BookMark your favorite site <i
+                    class="fa-solid fa-bookmark"></i></h2>
+
+            <label for="siteName" class="fw-bold mb-2"><i class="fa-solid fa-book-bookmark me-2"></i> Site Name</label>
+            <input onkeyup="validSiteName()" id="siteName" placeholder="BookMark Name" type="text" class="form-control mb-4">
+            <div id="alertName" style="display: none;" class="alert alert-danger">Enter first character Capitalize</div>
+            <!-- <div id="alertName2" style="display: none;" class="alert alert-danger"> No repeat SiteName</div> -->
+
+
+
+            <label for="siteUrl" class="fw-bold mb-2"><i class="fa-solid fa-book-bookmark me-2"></i> Site URL</label>
+            <input onkeyup="validSiteUrl()" id="siteUrl" placeholder="Website URL" type="text" class="form-control">
+            
+            <div id="alertUrl" style="display: none;" class="alert alert-danger">Enter an https:// URL:</div>
+
+            <button onclick="addWebsite()" id="addBtn" class=" btn btn-danger mt-3 px-4 w-100 ">Submit</button>
+        </div>
+
+        <div>
+            <table class="table text-center">
+                <thead class="fw-bold">
+                    <tr>
+                        <td>Index</td>
+                        <td>Website Name</td>
+                        <td>Visit</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+
+                <tbody id="tableData">
+                    <!-- <tr>
+                        <td>0</td>
+                        <td>FaceBook</td>
+                        <td><button class="visit border-0 rounded "><i class="fa-solid fa-eye"></i> Visit</button></td>
+                        <td><button class="delete border-0 rounded"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- <a href="" target="_blank" ><button onclick="visitWebsite(${arr[i].url})" class="visit btn "><i class="fa-solid fa-eye"></i> Visit</button></a> -->
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

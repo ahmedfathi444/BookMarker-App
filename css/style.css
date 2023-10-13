@@ -1,0 +1,48 @@
+body {
+    background-color: #f7ecde;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'PT Sans Caption', sans-serif;
+    /* font-family: 'Righteous', cursive; */
+
+
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    font-size: 45px;
+    padding-bottom: 50px;
+   
+}
+
+.bookmarker-body{
+    border-width: 2px 0px 2px 0px;
+    border-style: dotted;
+    border-color: black;
+    padding: 25px 0px;
+    
+}
+
+h2{
+     font-family: 'Righteous', cursive;
+    font-size: 25px;
+    color: yellowgreen;
+}
+.visit{
+    color: white;
+    padding:5px 10px;
+    background-color: yellowgreen;
+}
+.delete{
+    color: white;
+    padding:5px 10px;
+    background-color: #eb1d36;
+}
+.visit:hover{
+    background-color: rgb(111, 145, 43);
+    color: white;
+}
+.delete:hover{
+    background-color: #862a34;
+    color: white;
+}
